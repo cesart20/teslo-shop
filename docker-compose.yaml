@@ -1,0 +1,8 @@
+services:
+  teslodb:
+    container_name: teslo_database
+    image: mongo:5.0.0
+    volumes:
+      - ./mongo:/data/db
+    ports:
+      - 27017:27017
